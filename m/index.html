@@ -1,0 +1,269 @@
+<!-- 
+    Publitweet Web Page
+    Created by José Pertierra Das Neves & Daniel Ávila Fernández
+-->
+
+<html>
+    <head>
+        <title>Publitweet</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="../bootstrap/bootstrap.css" media="all" type="text/css">
+        <link rel="shortcut icon" type="image/x-icon" href="/icon/favicon.ico">
+        <script src="../jquery/jquery.js"></script>
+        <script type="text/javascript" src="../script/jquery.bxslider.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/jquery.bxslider.css">
+        <script src="../bootstrap/bootstrap.js"></script>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+        var n = 1;
+        var m = 4;
+        var intervalo = null;
+        function reset(){
+          clearInterval(intervalo);
+          intervalo = setInterval(function(){
+            autoSlide();
+          },10000);
+        }
+        $(document).ready(function(){
+          $(".slide").hide();
+          $(".s_1").show();
+          reset();
+        });
+        function slideto(num){
+          n = num;
+          $(".slide-active").fadeOut('fast',function(){
+            $(".slide-active").hide();
+            $("il .active").removeClass('active noClass');
+            $("o_"+num).addClass('active');
+            $(".slide-active").removeClass("slide-active");
+            $(".s_"+num).fadeIn('fast',function(){
+              $(".s_"+num).addClass("slide-active");
+            });
+          });
+        }
+        function autoSlide(){
+          n ++;
+          if (n>m){
+            n = 1;
+          }
+          slideto(n);
+        }
+        </script>
+        <style type="text/css">
+          body{
+            width: 100%;
+            height: 100%;
+            background-image: url('../resources/logos/logo500_170.png');
+            background-size: 100px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: black;
+          }
+          
+          h1{
+            max-width: 60%;
+            font-size: 15px;
+          }
+          h2{
+            font-size: 10px;
+            margin-bottom: 0px;
+          }
+          .slide{
+            width: 100%;
+            height: 100%;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+          }
+          .slide-inner{
+            height: 10px;
+          }
+          .slide-data{
+            color:white;
+            text-align: center;
+          }
+          .lead{
+            max-width: 60%;
+            font-size: 10px;
+          }
+          .botones_acceso{
+          width: 100%;
+          background-color: rgba(255,255,255,0.5);
+          }
+          .btn{
+            width: 70px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 10px;
+            font-size: 10px;
+            text-align: center;
+          }
+          .s_1{
+            background-image: url("../resources/imagenes/imagen1.jpg");
+            background-size: 100% 100%;
+          }
+          .s_2{
+            background-image: url("../resources/imagenes/imagen3.jpg");
+            background-size: 100% 100%;
+          }
+          .s_3{
+            background-image: url("../resources/imagenes/imagen2.jpg");
+            background-size: 100% 100%;
+          }
+          .s_4{
+            background-image: url("../resources/imagenes/imagen4.jpg");
+            background-size: 100% 100%;
+          }
+          header{
+              position: absolute;
+              width:100%;
+              height:100px;   
+          }
+          #navegacion{
+              position:absolute;
+              width:100%;
+              height:100px;
+              z-index: 2;
+          }
+          #menu{
+              margin:0px auto;
+              width:100%;
+              height:100%;
+          }
+          #logo{
+              width:100%;
+              margin-right: 60px;
+          }
+          .logo{
+              width:50%;
+              margin-top:30px;   
+          }
+          .boton{
+              border:none;
+              background:transparent;
+              color:#FFF;
+              font-size:10px;
+              font-weight: 100;
+              margin-top:10px;
+              outline:none;
+          }
+          .inicio{
+            text-align: center;
+            width: 40%;
+            background-color: rgba(0,0,0,0.5);
+          }
+          .icon-rs{
+              width: 35px;
+              height: 35px;
+              margin: 5%;
+              -webkit-transition: width 0.5s,height 0.5s;
+              -moz-transition: width 0.5s,height 0.5s;
+              transition: width 0.5s,height 0.5s;
+          }
+          .icon-rs:hover{
+              width: 40px;
+              height: 40px;
+          }
+          @media only screen and (max-width : 800px){
+            .slide{
+              background-size: auto 100%;
+            }
+            .boton{
+              font-weight: bold;
+            }
+            .slide-inner{
+              height: 50%;
+            }
+          }
+          @media only screen and (max-width : 500px){
+            body{
+              width: 100%;
+              height: 100%;
+            }
+            .twitter-widget{
+              display: none;
+            }
+
+          }
+        </style>
+    </head>
+    <header>
+      <div id="navegacion">
+        <div id="menu">
+          <center>
+            <div id="logo">
+              <center>
+                <img class="logo" src="../resources/logo/publitweet300_50.png">
+            </div>
+            <br>
+            <div id="menu_items">
+              <center>
+                <button class="boton" onclick="location.href = '../panel_anunciante/login/'">Anunciantes</button>
+                <button class="boton" onclick="location.href = '../panel_usuario/login/'">Twitteros</button>
+                <button class="boton" onclick="location.href = '../contacto/'">Contacto</button>
+            </div>
+        </div>
+      </div>
+    </header>
+    <div class="slide s_1 slide-active">
+      <div class="slide-inner">
+      </div>
+      <center>
+      <div class="slide-data">
+      <center>
+      <h1>Bienvenido a PubliTweet, tu portal de publicidad directa en Twitter</h1>
+      <p class="lead inicio" onclick="location.href = '../sobre_publitweet/'" style="cursor:hand;cursor:pointer;">¿Cómo funciona?</p>
+      </div>
+    </div>
+    <div class="slide s_2">
+      <div class="slide-inner">
+      </div>
+      <center>
+      <div class="slide-data">
+      <center>
+      <h1>Tenemos la mejor oferta para los twitteros</h1>
+      <p class="lead">Las campañas de nuestros anunciantes van directamente a tu bolsillo, sin intermediarios ni comisiones, lo que es tuyo, es tuyo y punto
+      <div class="botones_acceso">
+      <h2>¿Quieres participar?</h2><br>
+      <button class="btn btn-primary" onclick="location.href = '../panel_usuario/login/'">Regístrate</button><button class="btn btn-primary" onclick="location.href = '../panel_usuario/login/'">Accede</button>
+      </div></p>
+      </div>
+    </div>
+    <div class="slide s_3">
+      <div class="slide-data">
+      <center>
+        <div class="slide-inner">
+        </div>
+        <center>
+        <h1>El cliente que imaginas puedes encontrarlo con nosotros</h1>
+        <p class="lead">Todo lo que necesitas es un buen soporte para trasnmitir tu mensaje, con nosotros conseguirás llegar donde quieras
+        <br>
+        <div class="botones_acceso">
+        <h2>¿Quieres participar?</h2><br>
+        <button class="btn btn-primary" onclick="location.href = '../panel_anunciante/registro/'">Regístrate</button><button class="btn btn-primary" onclick="location.href = '../panel_anunciante/login/'">Accede</button>
+        </div></p>
+      </div>
+    </div>
+    <div class="slide s_4">
+      <div class="slide-data">
+      <center>
+        <center>
+        <div class="slide-inner">
+        </div>
+        <h1>Síguenos en las Redes Sociales</h1>
+        <a href="//twitter.com/PubliTweetWeb"><img src="../resources/iconos/t.png" class="icon-rs"></a>
+        <a href="https://www.facebook.com/profile.php?id=100007629225991&fref=ts"><img src="../resources/iconos/f.png" class="icon-rs"></a><br>
+        <a href="https://plus.google.com/u/1/109624963523466529519/posts"><img src="../resources/iconos/g.png" class="icon-rs"></a>
+        <a href="https://www.youtube.com/channel/UC6rL_sFi8qH0GAufv3WggGQ"><img src="../resources/iconos/y.png" class="icon-rs"></a>
+      </div>
+    </div>
+    <center>
+    <!--<ol class="carousel-indicators">
+      <li onclick="reset();slideto(1)" class="o_1"></li>
+      <li onclick="reset();slideto(2)" class="o_2"></li>
+      <li onclick="reset();slideto(3)" class="o_3"></li>
+      <li onclick="reset();slideto(4)" class="o_4"></li>
+    </ol>-->
+  <body>
+</html>

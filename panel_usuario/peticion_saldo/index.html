@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Envío del Saldo - PubliTweet</title>
+	<link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="../../script/jquery.js"></script>
+    <script src="../../script/bootstrap.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/icon/favicon.ico">
+    <meta charset="utf-8">
+    <style type="text/css">
+    .panel{
+    	margin-top: 50px;
+    	text-align: center;
+    	width: 500px;
+    	height: auto;
+    	box-shadow: 0px 0px 15px #8CB8DC;
+    }
+    .panel-body{
+    	margin-top: 10%;
+    }
+    .panel input{
+    	max-width: 75%;
+    	margin: 10px;
+    }
+    .panel a{
+    	margin-right: 20px;
+    }
+    .panel footer{
+    	text-align: left;
+    }
+
+    </style>
+</head>
+<body>
+	<center>
+	<div class="panel panel-info">
+		<div class="panel-heading">
+		    <img src="../../resources/logos/logo180_61.png">
+		</div>
+		<div class="panel-body">
+		    <form method="POST" action ="envio.php" enctype="multipart/form-data">
+		    	<center>
+		    	<div class="alert alert-success">PubliTweet utiliza Paypal para el envío de pagos.<br>
+		    	En un máximo de 24 horas estará en tu cuenta.</div>
+		    	<input type="text" class="form-control" name="cuenta" placeholder="Tu cuenta Paypal">
+		    	<input type="submit" class="btn btn-default" value="Aceptar">
+		    </form>
+		</div>
+	</div>
+</body>
+</html>

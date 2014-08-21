@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ingresar Saldo PubliTweet</title>
+	<meta charset="utf-8">
+	<link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" type="image/x-icon" href="/icon/favicon.ico">
+    <script src="../script/jquery.js"></script>
+    <script src="../script/bootstrap.js"></script>
+    <style type="text/css">
+	    header{
+	    	text-align: center;
+	    	width: 100%;
+	    	background-color: #00053B;
+	    	box-shadow: 0px 0px 10px #545454;
+	    }
+	    form{
+	    	margin: 50px;
+	    }
+	    p{
+	    	margin-top: 50px;
+	    	max-width: 400px;
+	    	text-align: justify;
+	    }
+    </style>
+</head>
+<body>
+	<header>
+		<img src="../resources/logo/publitweet300_50.png">
+	</header>
+	<center>
+	<p>
+		PubliTweet utiliza PayPal como medio para las transacciones monetarias. Por favor, seleccione la elección que mejor le convenga.
+		Cuando realice la operación escriba un mail a <a>pagos@publitweet.esy.es</a> indicando su nombre de cuenta en PayPal.
+	</p>
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="9QXA9KUGVAXCA">
+		<table>
+		<tr><td><input type="hidden" name="on0" value="Básico"></td></tr><tr><td><select name="os0">
+			<option value="Saldo de">Saldo de €1,00 EUR</option>
+			<option value="Saldo de">Saldo de €2,00 EUR</option>
+			<option value="Saldo de">Saldo de €5,00 EUR</option>
+		</select> </td></tr>
+		</table>
+		<input type="hidden" name="currency_code" value="EUR">
+		<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
+		<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+	</form>
+	<p>
+		En unas 24 horas como máximo tendrá disponible el saldo ingresado en su cuenta de PubliTweet.<br>
+		Un saludo,
+		<br><center>el equipo de PubliTweet
+	</p>
+</body>
+</html>

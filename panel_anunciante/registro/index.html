@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro de Twittero - PubliTweet</title>
+	<meta charset="UTF-8">
+	<link href="../../css/bootstrap.css" rel="stylesheet" media="screen">
+    <script src="../../script/jquery.js"></script>
+    <script src="../../script/bootstrap.js"></script>
+    <script type="text/javascript">
+    	function Validar(array){
+    		var vacio = false;
+    		$.each(array, function( index, value ) {
+				if ($("#"+value).val()==""){
+					$("#"+value).css({"background-color":"#FFC9C9"});
+					vacio = true;
+				}else{
+					$("#"+value).css({"background-color":""});
+				}
+			});
+			if (!vacio){
+				if ($("#password").val()==$("#password_repeticion").val()){
+					$("#password_repeticion").css({"background-color":""});
+					$("#form_registro").submit();
+				}else{
+					$("#password_repeticion").css({"background-color":"#FFC9C9"});
+				}
+			}
+    	}
+
+    	function preview_imagen(input) {
+	        if (input.files && input.files[0]) {
+	            var reader = new FileReader();
+
+	            reader.onload = function (e) {
+	                $('#preview').attr('src', e.target.result);
+	                $('#preview').show('slow');
+	            }
+
+	            reader.readAsDataURL(input.files[0]);
+	        }
+	    }
+
+    </script>
+    <style type="text/css">
+    	body{
+    		font-family: Verdana;
+    		background-color: #F4F4F4;
+    	}
+    	.cabecera{
+    		background-color: #D3DDE5;
+    		border:0px;
+    		border-bottom: 1px;
+    		border-style: solid;
+    		border-color: #B1C4D2;
+    	}
+    	.cabecera img{
+    		border:0px;
+    		border-right: 1px;
+    		border-style: solid;
+    		border-color: #B1C4D2;
+    	}
+	    .central{
+	    	margin-left: 10%;
+	    	height: 100%;
+	    }
+	    .central td{
+	    	text-align: center;
+	 	}
+	 	.datos{
+	    	text-align: center;
+	    	line-height: 30px;
+	    	width: 50%;
+	    }
+	    .datos input{
+	    	margin-top: 10px;
+	    }
+		form input{
+	    	margin-top: 10px;
+	    }
+	    #preview{
+	    	margin-top: 20px;
+	    }
+	    .aviso{
+	    	text-align: center;
+	    	max-width: 500px;
+	    }
+    </style>
+</head>
+<body>
+	<div class="cabecera">
+		<img src="../../resources/logos/logo180_61.png">
+	</div>
+	<center>
+	<form method="post" action="completar/index.php" id="form_registro" enctype="multipart/form-data">
+	<table class="central">
+		<tr>
+			<td>
+				<h2>Imagen de Empresa</h2>
+			</td>
+			<td>
+				<h2>Datos para PubliTweet</h2>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="back_twitter">
+						<center>
+						<input type="file" name="file" onchange="preview_imagen(this)">
+						<img id="preview" width="400" hidden>
+				</div>
+			</td>
+			<td>
+				  <div class="panel-body">
+				    
+					<center>
+						<div class="input-group datos">
+							<input type="text" id="correo" name="correo" placeholder=" Correo de contacto">
+							<input type="password" id="password" name="password" placeholder=" Contraseña">
+							<input type="password" id="password_repeticion" placeholder=" Repetir contraseña">
+							<input type="text" id="nombre" name="nombre" placeholder=" Nombre de empresa">
+							<input type="text" id="persona_contacto" name="persona_contacto" placeholder=" Persona de contacto">
+							<input type="text" id="telefono_contacto" name="telefono_contacto" placeholder=" Teléfono de contacto">
+							<textarea id="descripcion_empresa" name="descripcion" placeholder="Descripción de la empresa o servicios" style="margin:20px;"></textarea>
+						</div>
+					<input type="button" class="btn btn-primary" value="¡Registrarme!" onclick="Validar(['password','password_repeticion',
+					'nombre','persona_contacto','correo','telefono_contacto','descripcion_empresa'])">
+					<br><br>
+					<p class="aviso">
+						Al pulsar "¡Registrarme!" se aceptan las <a href="../../condiciones/#anunciantes">condiciones</a> de registro en PubliTweet para Anunciantes
+					</p>
+				</div>
+			</td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /panel_usuario/
+Disallow: /php/
+Disallow: /script/
+Disallow: /error/
+Disallow: /css/

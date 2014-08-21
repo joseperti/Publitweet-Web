@@ -1,0 +1,109 @@
+
+
+html, body{
+    width: 100%;
+    margin:0px;
+    background-color: black;
+    font-size: 10px;
+}   
+
+header{
+    position: absolute;
+    width:auto;
+    height:100px;   
+}
+
+#navegacion{
+    position:absolute;
+    width:100%;
+    height:100px;
+    z-index: 2;
+}
+
+#menu{
+    margin:0px auto;
+    width:1200px;
+    height:100%;
+}
+
+#logo{
+    float:left;
+    width:20%;
+    height:100%;
+}
+
+.logo{
+    width:200px;
+    margin-top:30px;   
+}
+
+.inicio{
+    background-color: rgba(255,255,255,0.5);
+    line-height: 100px;
+}
+
+#menu_items{
+    width:auto;
+    height:100%;
+    float: left;
+}
+
+.boton{
+    float:right;
+    border:none;
+    background:transparent;
+    color:#FFF;
+    font-size: 2em;
+    font-weight: 100;
+    margin-top:35px;
+    outline:none;
+    -webkit-transition: background-color 2s;
+    -moz-transition: background-color 2s;
+    transition: background-color 2s;
+}
+.boton:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+.carousel-inner{
+    width: 100%;
+    height: 100%;
+}
+.item{
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    background-position: center;
+}
+@media only screen (orientation : landscape){
+    .item{
+        background-size: 100% 100%;
+    }
+}
+@media only screen (orientation : portrait){
+    .item{
+        background-size: auto 100%;
+    }
+}
+.item p{
+    margin-bottom: 100px;
+}
+.image{
+    position: absolute;
+    height: 100%;
+}
+
+.icon-rs{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    -webkit-transition: width 0.5s,height 0.5s;
+    -moz-transition: width 0.5s,height 0.5s;
+    transition: width 0.5s,height 0.5s;
+}
+.icon-rs:hover{
+    width: 75px;
+    height: 75px;
+}
+.twitter-publitweet{
+    height: 40%;
+}

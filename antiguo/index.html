@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PubliTweet</title>
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="shortcut icon" type="image/x-icon" href="/icon/favicon.ico">
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Language" content="es"/>
+	<meta name="Keywords" content="Publicidad,Twitter,Tweet"/>
+	<meta name="Description" content="Punto de encuentro entre usuarios de Twitter y empresas o negocios
+	<br><a href='http://publitweet.esy.es/'>Twitteros</a>
+	<a href='http://publitweet.esy.es/'>Anunciantes</a>"/>
+	<meta name="Distribution" content="global"/>
+	<meta name="Robots" content="all"/>
+	<style type="text/css">
+	body{
+		font-family: Verdana;
+		background-color: #D7E0EA;
+	}
+	.cabecera_fija{
+		width: 100%;
+		height: 10%;
+	}
+	.azul{
+		background-color:#007fcc;
+		color:white;
+	}
+	footer{
+		position: fixed;
+		bottom: 0px;
+		height: 5%;
+		width: 100%;
+		text-align: center;
+	}
+	.boton{
+		font-size: 300%;
+	}
+	.boton:hover{
+		background-color: white;
+		color:#007fcc;
+		border-radius: 10%;
+	}
+	.cabecera_fija li{
+	   display: inline;
+	   text-align: center;
+	   margin-left: 10%;
+	} 
+	.contenedor_secciones{
+		
+	}
+	.seccion{
+		width: 100%;
+		height:600px;
+		color:white;
+	}
+	.seccion_1{
+		background-color: #9eccb3;
+	}
+	.seccion_2{
+		background-color: #00a3d1;
+	}
+	.seccion_3{
+		background-color: #009677;
+	}
+	.seccion_4{
+		background-color: #9eccb3;
+	}
+	.imagen_selec{
+		background-color: #A9BBCC;
+		border-radius: 10px;
+		margin: 50px;
+	}
+	.imagen_selec:hover{
+		background-color: #007fcc;
+	}
+	hr{
+		margin-right: 10%;
+		margin-left: 10%;
+		background-color: #007fcc;
+		height: 1px;
+	}
+	h2{
+		text-align: center;
+		margin-top: 10px;
+		color:white;
+		text-decoration: underline;
+	}
+	h3{
+		color:white;
+	}
+	.parrafo{
+		width: 80%;
+		text-align: justify;
+	}
+	.imagen_texto{
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	.timeline{
+		margin-right: 150px;
+	}
+	</style>
+	<script type="text/javascript">
+	$(function(){
+
+	     $('a[href*=#]').click(function() {
+
+	     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+	         && location.hostname == this.hostname) {
+
+	             var $target = $(this.hash);
+
+	             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+	             if ($target.length) {
+
+	                 var targetOffset = $target.offset().top;
+
+	                 $('html,body').animate({scrollTop: targetOffset}, 1000);
+
+	                 return false;
+
+	            }
+
+	       }
+
+	   });
+
+	});
+	</script>
+</head>
+<body>
+<nav class="cabecera_fija azul">
+	<ul>
+		<li class="boton" href="">PubliTweet</li>
+	</ul>
+</nav>
+<div class="contenedor_secciones">
+	<div class="seccion seccion_1" name="seccion_1">
+		<h2>¿Qué eres?</h2>
+		<center>
+		<br>
+		<br>
+		<table>
+			<tr>
+				<td>
+				<table>
+					<tr>
+						<td>
+							<center><A href="#seccion_3"><h3>Twittero</h3></A>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<a href="#seccion_3"><img src="recursos/twittero.png" class="imagen_selec"></img></a>
+						</td>
+					</tr>
+				</table>
+				</td>
+				<td>
+				<table>
+					<tr><td>
+						<center><A href="#seccion_2"><h3>Anunciante</h3></A></td></tr>
+					<tr><td><A href="#seccion_2"><img src="recursos/anunciante.png" class="imagen_selec"></img></A></td></tr>
+				</table>
+				</td>
+			</tr>
+			
+		</table>
+		
+	</div>
+	<hr></hr>
+	<div class="seccion seccion_2">
+		<a name="seccion_2"></a>
+		<h2>Anunciantes</h2>
+		<center>
+		<p class="parrafo">
+		<br>
+		Estamos desarrollando esta web para poder acercar la publicidad a los usuarios de Twitter. ¿Cuál es nuestro plan? Los anunciantes podrán seleccionar a los twitteros que estén interesados en publicar Tweets con un fin publicitario. A cambio el anunciante abona un precio que considere oportuno. ¿Qué nos diferencia de otras páginas? Debemos destacar que en España este tipo de webs no están muy desarrolladas. Contra las que funcionan debemos decir que llevan a cabo una ejecución poco transparente entre el <b> anunciante </b> y el <b> twittero </b>. Nosotros no llevaremos a cabo ningún cobro de intereses. No somos una asociación que se quiera lucrar con esta vía. Intentaremos funcionar con las ayudas que habilitaremos próximamente. Lo que nos dará la opción de tener los mejores precios por la <b>publicidad</b>.<center>
+		<img class="imagen_texto" src="recursos/img_01.png">
+		Un saludo, los desarrolladores.</center>
+		</p>
+	</div>
+	<hr>
+	<div class="seccion seccion_3" name="seccion_3">
+		<a name="seccion_3"></a>
+		<h2>Twitteros</h2>
+		<br>
+			<center>
+			<p class="parrafo">
+			<br>
+			Tú <b>twittero</b>. Que tienes que ver como los grandes "Twitstars" ganan fama y algo de <b>ingresos</b> dedicando mensajes a determinados productos o servicios. Te traemos la página, tu página. Apúntate, nosotros te haremos llegar anuncios que tendrás que publicar y conseguir así esos <b>privilegios económicos</b> que disfrutan algunos pocos ahora mismo. ¿Cómo funcionará? Inicias sesión con tu cuenta de Twitter para poder recoger algunos datos tuyos y saber que eres el propietario. Cuando tengas una posible publicación te mandaremos un Mensaje Directo a través de nuestra cuenta en Twitter: PubliTweet. Después inicias sesión en <b>PubliTweet</b> y publicas tus anuncios pendientes. Fácil,¿no?.
+			<center><img class="imagen_texto" src="recursos/img_02.png">
+			Un saludo, los desarrolladores.</center>
+			</p>
+	</div>
+	<hr>
+	<div class="seccion seccion_4">
+		<a name="contacto"></a>
+		<h2>Contacto</h2>
+		<center>
+		<br>
+			<table>
+				<tr>
+					<td>
+						<div class="timeline">
+							<a class="twitter-timeline"  href="https://twitter.com/PubliTweet2"  data-widget-id="482665356893237248" widht="300">Tweets por @PubliTweet2</a>
+						    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						</div>
+					</td>
+					<td>
+						<b>Correo</b>: <b>contacto@publitweet.esy.es</b>
+						<br><br>
+						<b>Notas</b>: Esta web ha sido desarrollada en unas 4 horas. Dadnos<br>
+						un par de semanas y tendréis algo muy bueno.
+						<br><br>
+						<b>Sobre nosotros</b>: Somos un modesto grupo de desarrolladores con<br>
+						talento que quiere llevar a cabo proyectos interesantes.
+						<br><br>
+						<b>Una cita</b>: "No es gracias a la benevolencia del carnicero o del<br>
+						cervecero por la que podemos cenar hoy" - Adam Smith.
+						<br><br>
+						<b>¿Te gusta la idea?</b> Déjanos tu email o Twitter para hacerte spam vilmente :-)
+						<br><br>
+						<form method="POST" action="php/apoyo.php">
+							<div class="input-group">
+								<input type="text" class="form-control" name="contacto" placeholder="Email o Twitter"></input>
+								<div class="input-group-btn">  
+									<input class="btn btn-success" type="submit" value="Me gusta!"></input>
+								</div>
+							</div>
+						</form>
+					</td>
+				</tr>
+			</table>
+	</div>
+</div>
+<footer class="azul">Desarrollado en <b>Galicia, España</b> - <A href="#contacto" style="color:white;"><b>Contacto</b></A></footer>
+</body>
+</html>
