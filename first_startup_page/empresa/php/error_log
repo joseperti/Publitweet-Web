@@ -1,0 +1,5 @@
+[26-Feb-2014 17:46:05 UTC] PHP Parse error:  syntax error, unexpected '"€ </button>¬' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home2/unituitc/public_html/prueba2/empresa/php/obtener_anuncios.php on line 11
+[26-Feb-2014 17:46:06 UTC] PHP Parse error:  syntax error, unexpected '"€ </button>¬' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home2/unituitc/public_html/prueba2/empresa/php/obtener_anuncios.php on line 11
+[26-Feb-2014 18:26:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home2/unituitc/public_html/prueba2/empresa/php/enviar_textual.php on line 19
+[01-Mar-2014 10:37:00 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home2/unituitc/public_html/empresa/php/enviar_textual.php on line 20
+[01-Mar-2014 10:41:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home2/unituitc/public_html/empresa/php/enviar_textual.php on line 20

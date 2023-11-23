@@ -1,0 +1,425 @@
+/*Hoja de estilos de la pagina principal*/
+
+
+/*HTML y body*/
+html {
+    width:100%;
+    height:100%;
+    
+}
+
+body{
+    -moz-;
+    -webkit-;
+    -o-;
+    width:100%;
+    height:100%;
+    margin:0;
+    
+}
+/*HTML y body*/
+
+/*Emergente*/
+#emergente{
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1;
+    width:100%;
+    height:100%;
+    background:#3C64AA;
+}
+
+#ventanadatos{
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: -1;
+    width:100%;
+    height:400px;
+    margin-top:100px;
+    
+}
+
+#ventanaemergente{
+    margin:0px auto;
+    width:500px;
+    height:100%;   
+    background: #FFFFFF;
+    border-radius:7px;
+
+}
+
+#cargando{
+    width:100%;
+    height:350px;
+    text-align: center;  
+}
+
+#ventanauser{
+    width:100%;
+    height:350px;
+    text-align: center;  
+}
+
+.loading{
+    width:100px;
+    height:100px;
+}
+
+#botones{
+    width:100%;
+    height:50px;
+}
+
+.botonemergente{
+    width:150px;
+    height:40px;
+    font-size: 15px;
+    outline: none;
+    border:none;
+    background: #FFFFFF;
+    border-radius: 7px;
+    margin-top:5px;
+    margin-left:10px;
+    font-family:abeezee;
+    color: #555555;
+}
+
+.botonemergente:hover{
+    color: #BBBBBB;
+}
+
+.botonemergente:active{
+    color: #0A46AA;
+}
+
+.labelcalc{
+    font-size:50px;
+    font-family: argh;
+    color: #3C64AA;  
+}
+
+/*Fin de emergente*/
+
+/*Cabecera*/
+#cabecera{
+    width:100%;
+    height:60px;   
+}
+
+#cabeceramovil{
+    position:fixed;
+    width:100%;
+    height:50px;
+    background:#FFFFFF;
+}
+
+#datoscabecera{  
+    margin:0px auto;
+    width:1000px;
+    height:100%;
+}
+
+#divsocial{
+    float:right;
+    
+}
+
+.logo{
+    float:left;
+    width:150px;
+    padding: 5px;
+	cursor:pointer;
+}
+
+.social{
+    opacity: 0.75;
+    padding-top:10px;
+}
+
+.social:hover{
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+#ventanasocial{
+    position:absolute;
+    margin-top: 30px;
+    z-index: 1;
+    width:1050px;
+    height:90px;
+}
+
+#ventanasocialpeque{
+    float:right;
+    width:200px;
+    height:100%;
+}
+
+
+.ventanasocial{
+    float:right;
+    width:200px;
+    height:100%;
+    background:#FFFFFF;
+    margin-top: 25px;
+}
+
+#flechas{
+    margin: 0px auto;
+    width:100px;
+    height:5px;
+}
+
+.flecha{
+    float:right;
+    width:33px;
+    height:100%;
+}
+
+#enlacesocial{
+    width: 100%;
+    height:90%;
+}
+
+.enlacesocial{
+    width:100%;
+    height:50%;
+    background: transparent;
+    border:none;
+    outline: none;
+    font-size:20px;
+    margin-top:25px;
+    color: #555555;
+}
+/*Fin de cabecera*/
+
+
+/*Contenido*/
+#contenido{
+    width:100%;
+    height: 600px;
+    background: url(../recursos/fondo/fondo.jpg)no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+#divcalcular{
+    margin:0 auto;
+    width:1000px;
+    height: 100%;
+    text-align: center;
+}
+
+.titulo{
+    color: #555555;
+    font-family:abeezee;
+    font-size:55px;
+    
+}
+
+.separador{
+    width:100%;
+    height: 50px;
+}
+
+#elementoscal{
+    width:100%;
+    height:60px;
+}
+
+#textplace{
+    float:left;
+    width:55%;
+    height:100%;
+}
+
+#buttonplace{
+    float:right;
+    width:43%;
+    height:100%;
+}
+
+.textfield{
+    float:right;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    width:300px;
+    height:60px;
+    border-radius: 7px;
+    padding-left:30px;
+    outline: none;
+    border: none;
+    font-family:abeezee;
+    font-size:25px;
+    color:#3C64AA;
+    background-color: #FFFFFF;
+}
+
+.textfield:focus{
+    background: #EEEEEE;  
+    color: #555555;
+}
+
+.calcular{
+    float:left;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    width:150px;
+    height:60px;
+    border-radius: 7px;
+    outline:none;
+    border: none;
+    background:#FFFFFF;
+    font-size:25px;
+    font-family: abeezee;
+    color: #3C64AA;
+}
+
+.calcular:hover{
+    color: #555555;
+}
+
+.calcular:active{
+    background:#555555;
+    color: #FFFFFF;
+}
+
+/*Fin de contenido*/
+
+/*Informacion*/
+#infodiv{
+    width:100%;
+    height:1000px;
+    background: #EEEEEE;
+    text-align: center;
+}
+
+#informacion{
+    margin: 0px auto;
+    width:1000px;
+    height:800px;
+    text-align: center;
+}
+
+#anunciantes{
+    float:left;
+    width:50%;
+    height:900px;
+}
+
+#twitteros{
+    float:right;
+    width:50%;
+    height:900px;
+}
+
+.subti{
+    font-size:50px;
+    font-family: argh;
+    color: #3C64AA;
+}
+
+.parrafo{
+    font-size:20px;
+    font-family: abeezee;
+    color: #3C64AA;
+}
+
+.botonenlace{
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    width:300px;
+    height:60px;
+    background: #555555;
+    outline: none;
+    border:none;
+    border-radius: 7px;
+    font-family:abeezee;
+    font-size:25px;
+    color: #FFFFFF;
+}
+
+.botonenlace:hover{
+    width:350px;
+    height: 70px;
+    background: #EEEEEE;
+    color:#3C64AA;
+	cursor:pointer;
+}
+
+.botonenlace:active{
+    width:300px;
+    height:60px;
+    background: #3C64AA;
+    color:#FFFFFF;
+}
+
+#infotwitteros{
+    float:right;
+    width:95%;
+    text-align: justify;  
+}
+
+#infoanunciantes{
+    float:left;
+    width:95%;
+    text-align: justify;  
+}
+
+.info{
+    font-size:20px;
+    font-family:abeezee;
+    color:#555555;
+	padding-top:16px;
+}
+
+.info a{
+	text-decoration:none;
+}
+
+
+#funcionamiento{
+    width:100%;
+    height: 700px;
+    background:#555555;  
+}
+
+#contenidofun{
+    margin:0px auto;
+    widtH:1000px;
+    height:100%;
+    font-size:50px;
+    font-family: bebas;
+    color:#FFFFFF;
+}
+
+.subti2{
+    font-size:50px;
+    font-family: bebas;
+    color:#FFFFFF;
+}
+
+
+.subti3{
+    font-size:54px;
+    font-family: argh;
+    color: #3C64AA;
+}
+
+.cartel{
+    width:100%;   
+}
+/*Fin de informacion*/
+
+
+

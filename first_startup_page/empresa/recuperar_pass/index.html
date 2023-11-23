@@ -1,0 +1,88 @@
+<!--
+    Unituit.com
+    Creado por José Pertierra das Neves
+    y Daniel Ávila Fernández
+-->
+
+<!DOCTYPE html> 
+<!-- Inicio pagina -->
+<html>
+    <!-- cabecera de la pagina -->
+    <head>        
+        <link rel="stylesheet" href="../../css/tipografia.css" media="all" type="text/css"> <!-- Hoja de estilos de la tipografia -->
+        <link rel="stylesheet" href="../../css/login_empresa.css" media="all" type="text/css"> <!-- Hoja de estilos de la pagina principal -->
+        <script src="../../script/jquery.js"></script> <!-- jquery --> 
+        <meta charset="utf-8">
+        <title>Login empresa</title>
+       <script>
+        function enviar(){
+            $.post('../php/recuperar_pass.php',{email:$("#email").val()},function(data){
+                alert(data);
+            });
+        }
+        </script>
+    </head>
+    <!-- Fin de la cabecera -->
+    
+    <!-- Cuerpo de la pagina -->
+    <body>
+        
+        <div id="ventanaerror" hidden>
+            <div id="ventanalert">
+                 <div id="divisor"></div>
+                <label class="titulon">ERROR</label>
+                <div id="divisor"></div>
+                <label class="subtitulon">El email es<br>incorrecto</label>
+                
+            </div>
+        </div>
+        
+        <div id="cabecera"> <!-- Barra de menu -->     
+            <div id="cabeceramovil">
+                <div id="datoscabecera">
+                    <div id="divlogo">
+                        <img class="logo" src="../../recursos/logos/logoazul.png" onClick="main()">
+                    </div>
+                    <div id="divsocial">
+                        <img class="social" src="../../recursos/social/facebookicon.png" onClick="irafacebook()">
+                        <img class="social" src="../../recursos/social/twittericon.png" onClick="iratwitter()">
+                        <img class="social" src="../../recursos/social/mailicon.png" onClick="location.href = '../../contacto/'">
+                    </div>     
+                    <div class="info"> 
+                    <a href="../../index/"> Pagina Principal </a> - <a href="../../contacto/"> Contacto </a> - <a href="../../faqs/" > FAQs </a> <!--- <a href="../trabaja_con_nosotros/"> Trabaja con nosotros </a>-->
+                     - <a href="../../politicas/"> Políticas de privacidad </a>
+                    </div>
+                </div> 
+            </div>
+        </div> <!-- Fin de la barra-->
+        <div id="contenido">
+            <div id="panellogin">
+                <div id="ventanalogin">
+                    <div id="divisor"></div>
+                    <label class="titulo">Recuperar Contraseña</label>
+                </div>
+                    <div id="divisor"></div>
+                    <div id="derecha">
+                        <div id="divisor50"></div>
+                        <input id="email" tyle="text" class="texto">
+                    </div>
+                    
+                    <div id="izquierda">
+                        <div id="divisor50"></div>
+                        <label class="subtitulo">Email:</label>
+                    </div>
+                    
+                    <div id="divboton">
+                        <div id="divisor"></div>
+                        <button class="boton" onclick="enviar()">Enviar</button>
+                    </div>
+            </div>
+        </div>
+
+
+        
+    </body>
+    <!-- Fin del cuerpo-->
+    
+</html>
+<!-- Fin de la pagina -->

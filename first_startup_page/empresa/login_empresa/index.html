@@ -1,0 +1,111 @@
+<!--
+    Unituit.com
+    Creado por José Pertierra das Neves
+    y Daniel Ávila Fernández
+-->
+
+<!DOCTYPE html> 
+<!-- Inicio pagina -->
+<html>
+    <!-- cabecera de la pagina -->
+    <head>        
+        <link rel="stylesheet" href="../../css/tipografia.css" media="all" type="text/css"> <!-- Hoja de estilos de la tipografia -->
+        <link rel="stylesheet" href="../../css/login_empresa.css" media="all" type="text/css"> <!-- Hoja de estilos de la pagina principal -->
+        <script src="../../script/jquery.js"></script> <!-- jquery --> 
+        <script src="../../script/login_empresa.js"></script> 
+        <script>
+            function comprobar(){
+                $("#resultado").html("Comprobando");
+                var usuario = $("#user").val();
+                var pass = $("#pass").val();
+                $.post('../php/ingresar.php',{usuario:usuario,pass:pass},function(data){
+                    $("#resultado").html(data);
+                    if (data=="11"){
+                        $(location).attr('href','../panel_empresa/');
+                    }else{
+                        $("#ventanaerror").show();
+                    }
+                });
+            }
+        </script>
+        <meta charset="utf-8">
+        <title>Login empresa</title>
+       
+    </head>
+    <!-- Fin de la cabecera -->
+    
+    <!-- Cuerpo de la pagina -->
+    <body onload="empezar()">
+        
+        <div id="ventanaerror">
+            <div id="ventanalert">
+                 <div id="divisor"></div>
+                <label class="titulon">ERROR</label>
+                <div id="divisor"></div>
+                <label class="subtitulon">Usuario o contraseña <br>incorrectos</label>
+                <div id="divisor"></div>
+                <div id="divisor"></div>
+                <button class="botonn" onclick="empezar()">ACEPTAR</button>
+                
+            </div>
+        </div>
+        
+        <div id="cabecera"> <!-- Barra de menu -->     
+            <div id="cabeceramovil">
+                <div id="datoscabecera">
+                    <div id="divlogo">
+                        <img class="logo" src="../../recursos/logos/logoazul.png" onClick="main()">
+                    </div>
+                    <div id="divsocial">
+                        <img class="social" src="../../recursos/social/facebookicon.png" onClick="irafacebook()">
+                        <img class="social" src="../../recursos/social/twittericon.png" onClick="iratwitter()">
+                        <img class="social" src="../../recursos/social/mailicon.png" onClick="location.href = '../../contacto/'">
+                    </div>     
+                    <div class="info"> 
+                    <a href="../../index/"> Pagina Principal </a> - <a href="../../contacto/"> Contacto </a> - <a href="../../faqs/" > FAQs </a> <!--- <a href="../trabaja_con_nosotros/"> Trabaja con nosotros </a>-->
+                     - <a href="../../politicas/"> Políticas de privacidad </a>
+                    </div>
+                </div> 
+            </div>
+        </div> <!-- Fin de la barra-->
+        <div id="contenido">
+            <div id="panellogin">
+                <div id="ventanalogin">
+                    <div id="divisor"></div>
+                    <label class="titulo">LOGIN</label>
+                </div>
+                    <div id="divisor"></div>
+                    <div id="derecha">
+                        <div id="divisor50"></div>
+                        <input id="user" type="text" class="texto">
+                        <div id="divisor50"></div>
+                        <input id="pass" type="password" class="texto">
+                    </div>
+                    
+                    <div id="izquierda">
+                        <div id="divisor50"></div>
+                        <label class="subtitulo">Usuario:</label>
+                        <div id="divisor50"></div>
+                        <label class="subtitulo">Contraseña:</label>
+                    </div>
+                    
+                    <div id="divboton">
+                        <div id="divisor"></div>
+                        <button class="boton" onclick="comprobar()">ENTRAR</button>
+                    </div>
+                
+                <div id="info">
+                    <div id="divisor50"></div>
+                    <button class="subbot" onclick="location.href = '../recuperar_pass/'">HE OLVIDADO MI CONTRASEÑA</button>
+                    <button class="subbot" onclick="location.href = '../nuevo_empresa/'">REGISTRAR UNA CUENTA</button>
+                </div>
+            </div>
+        </div>
+
+
+        
+    </body>
+    <!-- Fin del cuerpo-->
+    
+</html>
+<!-- Fin de la pagina -->

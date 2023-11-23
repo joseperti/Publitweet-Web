@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Unituit</title>
+    <script type="text/javascript">
+document.oncontextmenu=function() {return false;}
+</script>
+<!--Hasta aqui boton derecho deshabilitado y a partir de aqui no deja seleccionar texto-->
+<script language="Javascript" type="text/javascript">
+function disableselect(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function ("return false")
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+</script>
+    ></head>
+
+    <body onLoad="iraindex()">
+    
+    </body>
+    <script>
+        function iraindex(){
+            location.href="index"   
+        }
+    </script>
+</html>

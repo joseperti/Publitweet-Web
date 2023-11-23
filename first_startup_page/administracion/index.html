@@ -1,0 +1,26 @@
+<html>
+<head>
+	<meta charset="UTF-8"></meta>
+	<title>Panel de administración</title>
+	<script src="script/jquery.js"></script>
+	<script src="script/jquery.flot.js"></script>
+	<script type="text/javascript" src="script/bloques.js"></script>
+	<script type="text/javascript">
+		function comprobar(){
+			var nombre = $("#name").val();
+			var pass = $("#password").val();
+			$.post('datos/index.php',{name:nombre,password:pass},function(data){
+				$("body").html(data);
+			})
+		}
+	</script>
+</head>
+<body bgcolor="#99FFFF">
+
+	<CENTER>
+	---Nombre <input type="text" id="name" onkeypress="if (event.keyCode == 13) comprobar()"></input><br>
+	Contraseña <input type="password" id="password" onkeypress="if (event.keyCode == 13) comprobar()"></input><br>
+	<button onclick="comprobar()"> Enviar </button>
+
+</body>
+</html>

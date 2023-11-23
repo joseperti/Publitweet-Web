@@ -1,0 +1,44 @@
+/* Hoja de estilos de tipografias*/
+
+@font-face{    
+    font-family: "asenine";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../recursos/tipografias/asenine.ttf) format('truetype');
+}
+
+@font-face{    
+    font-family: "neou";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../recursos/tipografias/neou.ttf) format('truetype');
+}
+
+
+@font-face{    
+    font-family: "lane";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../recursos/tipografias/lane.ttf) format('truetype');
+}
+
+@font-face{    
+    font-family: "lanecane";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../recursos/tipografias/lanecane.ttf) format('truetype');
+}
+
+@font-face{    
+    font-family: "lanenar";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../recursos/tipografias/lanenar.ttf) format('truetype');
+}
+
+@font-face{    
+    font-family: "laneposh";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../recursos/tipografias/laneposh.ttf) format('truetype');
+}

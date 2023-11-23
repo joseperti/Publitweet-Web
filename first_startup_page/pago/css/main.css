@@ -1,0 +1,121 @@
+/*Css de página principal base*/
+
+@font-face{    
+    font-family: "pistara";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../../recursos/tipografias/pistara.otf) format('opentype');
+}
+
+@font-face{    
+    font-family: "asenine";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../../recursos/tipografias/asenine.ttf) format('truetype');
+}
+
+@font-face{    
+    font-family: "giorgio";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../../recursos/tipografias/giorgio.ttf) format('truetype');
+}
+
+
+body{
+    margin:0;
+    background: url(../../recursos/fondo.jpg) no-repeat center center fixed;
+    background-size: cover; 
+}
+
+#divisor{
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    height:100%;
+    width:17%;
+    float:left;
+}
+
+/* Estructura de la pagina*/
+#contenido{   
+    float:left;
+    margin:auto;
+    width: 65%;
+    padding-top:50;
+    padding-bottom:50;
+    font-family: pistara, sans-serif;
+
+}
+
+#cabecera{
+    background:#FFFFFF;
+    width:100%;
+    height:200;  
+}
+
+#menu{
+    float:left;
+    width:100%;
+    height:50;
+    font-family:giorgio;
+    background: #00416E;   
+    color:#FFFFFF;
+}
+
+#menu ul{
+    float:left;
+    margin:0;
+    width:80%;
+    margin-left:51;
+    padding-top:20;
+    padding-bottom:10;
+    
+}
+
+#menu li{
+    float:left;
+    text-decoration:none;
+    width:20%;
+    font-size:20;
+    
+}
+
+#menu li a{
+    float:left;
+    color:#FFFFFF;
+    text-decoration:none;
+    width:20%;
+    font-size:20;
+    
+}
+
+#cuerpo{
+    height:900;
+    width:100%;
+    background: #FFFFFF;   
+    text-align: center;
+}
+
+#cuerpoderecha{
+    float:right;   
+    width:50%;
+    height:100%;  
+    text-align:center;
+    align-items:center;
+}
+
+#cuerpoizquierda{
+    float:left;   
+    width:50%;
+    height:100%; 
+    
+}
+
+#pie{
+    width:100%;
+    height:200;
+    background: #00416E;
+    
+}
+/* fin estructura de la pagina*/

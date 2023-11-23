@@ -1,0 +1,8 @@
+[22-Feb-2014 14:08:01 UTC] PHP Fatal error:  Call to a member function fetch_row() on a non-object in /home2/unituitc/public_html/prueba2/panel_usuario/php/obtener_categorias.php on line 9
+[22-Feb-2014 15:34:34 UTC] PHP Warning:  file_get_contents(http://unituit.com/final/anuncios/19.png): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home2/unituitc/public_html/prueba2/panel_usuario/php/publicar_anuncio.php on line 25
+[23-Feb-2014 16:04:13 UTC] PHP Warning:  file_get_contents(http://unituit.com/final/anuncios/1.png): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home2/unituitc/public_html/prueba2/panel_usuario/php/publicar_anuncio.php on line 25
+[26-Feb-2014 01:11:09 UTC] PHP Warning:  file_get_contents(http://unituit.com/final/anuncios/9.png): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home2/unituitc/public_html/prueba2/usuario/php/publicar_anuncio.php on line 25
+[26-Feb-2014 01:13:40 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home2/unituitc/public_html/prueba2/usuario/php/informacion_anuncio.php on line 10

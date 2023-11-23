@@ -1,0 +1,99 @@
+<!-- 
+    Unituit web page
+    created by Alejandro Aviles, Jose Pi, Daniel Ávila Fernandez
+    copyright unituit 2014 all right reserved
+-->
+
+<!-- Inicio-->
+<html>
+    <head>
+        <meta lang="es" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="StyleSheet" href="css/main.css" media="all" type="text/css">   
+        <link rel="StyleSheet" href="css/barra.css" media="all" type="text/css">   
+        <link rel="StyleSheet" href="css/social.css" media="all" type="text/css"> 
+        <link rel="StyleSheet" href="css/tipografias.css" media="all" type="text/css"> 
+        <script src="script/jquery.js" type="text/javascript"></script>
+        <script src="script/efectos.js"></script>
+        <script src="script/consultar.js"></script>
+        <script type="text/javascript" src="script/captcha.js"></script>
+        <title>Contacta con Unituit</title>
+
+    </head>
+
+    <!-- Principio-->
+    <body>
+        <!-- Botones social -->
+            <div id="divsocial">
+                <div id="social">
+                    <div style="position:fixed">
+                    <button class="botonsocial" id="facebot" onmouseover="alargar(1)" onmouseOut="encoger(1)"><img id="imageface" src="../recursos/social/facebook_icon.png"></button>
+                    <div style="height:5;"></div>
+                    <button class="botonsocial" id="twitbot" onmouseover="alargar(2)" onmouseOut="encoger(2)"><img id="imagetwit" src="../recursos/social/twitter_icon.png"></button>
+                    <div style="height:5;"></div>
+                    <button class="botonsocial" id="goobot" onmouseover="alargar(3)" onmouseOut="encoger(3)"><img id="imagegoo" src="../recursos/social/google_icon.png"></button>
+                    <div style="height:5;"></div>
+                    <button class="botonsocial" id="youbot" onmouseover="alargar(4)" onmouseOut="encoger(4)"><img id="imageyou" src="../recursos/social/youtube_icon.png"></button>
+                    <div style="height:5;"></div>
+                    <button class="botonsocial" id="linkedbot" onmouseover="alargar(5)" onmouseOut="encoger(5)"><img id="imagelinked" src="../recursos/social/linkedin_icon.png"></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Botones social -->
+        
+        <!-- barra lateral -->
+        <div id="barralateral">            
+            <div id="barra" style="font-family:pistara; font-size: 100px; float:left ">
+                <center>
+                    <a  href="unituit.com/final"><img id="logobar" src="../recursos/logo_barra.png" style="width:200; height:100; -moz-transition: all 1s ease-in-out; -webkit-transition: all 1s ease-in-out; -o-transition: all 1s ease-in-out"></a>
+                    <ul>
+                    </ul>
+                </center>
+            </div>
+        </div>
+        <!-- Fin barra lateral -->
+        
+            <div id="divisor"></div>
+            <div id="contenido">
+                <div id="cabecera">
+                    <img src="../recursos/logo400_200.png" style="marginleft:50; width:400; height:200">
+                </div>               
+                <div id="menu">
+                    <input type="image" style="width:50; height:50;outline:none; border:none; float:left" src="../recursos/iconos/barra_icono.png" onclick="barra()">
+                    <ul>
+                        <li><a href="registro.html">Registro</a></li>
+                        <li>Usuarios</li>
+                        <li>Anunciantes</li>
+                        <li>Contacto</li>
+                        <li>Acerca de</li>
+                    </ul>
+                </div>
+                
+                <div id="cuerpo">
+                    <br>
+                    Tu nombre * <input type="text" id="nombre"> </input>
+                    <br>
+                    <br>
+                    Tu email * <input type="text" id="email"> </input>
+                    <br>
+                    <br>
+                    Tu mensaje * <textarea cols="50" id="mensaje"> </textarea>
+                    <br>
+                    <br>
+                    <div id="captcha">
+                    </div>
+                    <br>
+                    Inserte el código <input type="text" id="valorcaptcha"></input>
+                    <br>
+                    <button onclick="contacto()" >Enviar</button>
+                    <div id="enviado">
+                    </div>
+                    <br>
+                </div>
+                
+                <div id="pie">
+                </div>
+            </div>
+    </body>
+</html>
+<!-- Final -->

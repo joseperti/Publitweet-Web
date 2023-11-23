@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>Información de Unituit</title>
+	<script src="../script/jquery.js">
+	</script>
+	<script>
+		$.get("php/datos.php",function(data){
+			$("#informacion").html(data);
+		});
+	</script>
+</head>
+<body>
+<div id="informacion">
+
+</div>
+</body>
+</html>

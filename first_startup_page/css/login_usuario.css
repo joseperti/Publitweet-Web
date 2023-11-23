@@ -1,0 +1,44 @@
+/* Hoja de estilos de la pagina de login de usuario */
+
+html{
+    width:100%;
+    height:100%;
+}   
+
+body{
+    margin: 0px;
+    background: #3C64AA;
+}
+
+#barrasuperior{
+    width:100%;
+    height:50px;
+    background:#FFFFFF;
+}
+
+#contenido{
+    margin: 0px auto;
+    width:1000px;
+    height:100%;
+    font-family:abeezee;
+    font-size: 100px;
+    text-align: center;
+    color:#FFFFFF;
+}
+
+#divisor{
+    height:200px;   
+}
+
+#footer{
+    bottom: 0px;
+    position:fixed;
+    width:100%;
+    height:100px;
+    background:#FFFFFF;
+}
+
+.imagen{
+    width:150px; 
+    padding:5px;
+}

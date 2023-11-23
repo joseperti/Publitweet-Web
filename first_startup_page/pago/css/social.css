@@ -1,0 +1,26 @@
+/*css barra social*/
+
+#divsocial{
+    position:absolute;
+    z-index:3;
+    width:100%;
+}
+
+#social{
+    width:60;
+    float:right;
+    margin-top:10%;
+}
+
+.botonsocial{
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    width: 60;
+    height: 60;
+    background: #555555;
+    outline:inherit;
+    border: 0px;
+    
+    
+} 

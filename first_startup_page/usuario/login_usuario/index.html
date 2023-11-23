@@ -1,0 +1,50 @@
+<!-- Unituit web page
+    Created by José Pertierra des Naves
+    Daniel Ávila Fernández
+    José Áviles
+-->
+<!DOCTYPE html>
+<!-- Principio de la pagina -->
+<html>
+    <!-- Cabecera de la pagina -->
+    <head>
+        <link rel="StyleSheet" href="../../css/login_user.css" media="all" type="text/css">
+        <link rel="StyleSheet" href="../../css/tipografia.css" media="all" type="text/css">
+        <script src="../../script/jquery.js"></script>
+        <meta charset="UTF-8"></meta>
+    
+    </head>
+    <!-- Fin de la cabecera -->
+     
+    <!-- Cuerpo de la pagina -->
+    <body onload="timer()">
+        <div id="barrasuperior">
+            <div id="bscontenido">
+                <img class="imagen" src="../../recursos/logos/logoazul.png">
+            </div>
+        </div>
+        
+        <div id="contenido">
+            <center>
+                <div style="width:1200">
+                        <div id="divisor"></div>
+                        <label class="label"> REDIRECCIONANDO A TWITTER</label>
+                </div>
+            </center>
+        </div>
+        
+        <div id="footer">
+            
+        </div>
+    </body>
+    <!-- Fin del cuerpo -->
+            <script type="text/javascript">
+            url = null;
+            $(document).ready($.get("index.php", function( data ) {
+                $(location).attr('href',data);
+            }));
+        
+    </script>
+
+</html>
+<!-- Final de la pagina -->

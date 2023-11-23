@@ -1,0 +1,68 @@
+/* Hoja de estilos para definir las tipografias*/
+
+@font-face {
+    font-family: 'altera';
+    src: url('../recursos/tipografias/altera/altera-webfont.eot');
+    src: url('../recursos/tipografias/altera/altera-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../recursos/tipografias/altera/altera-webfont.woff') format('woff'),
+         url('../recursos/tipografias/altera/altera-webfont.ttf') format('truetype'),
+         url('../recursos/tipografias/altera/altera-webfont.svg#alteraregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'argh';
+    src: url('../recursos/tipografias/argh/argh.eot');
+    src: url('../recursos/tipografias/argh/argh.eot?#iefix') format('embedded-opentype'),
+         url('../recursos/tipografias/argh/argh.woff') format('woff'),
+         url('../recursos/tipografias/argh/argh.ttf') format('truetype'),
+         url('../recursos/tipografias/argh/argh.svg#alteraregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'abeezee';
+    src: url('../recursos/tipografias/abeezee/abeecee.eot');
+    src: url('../recursos/tipografias/abeezee/abeezee.eot?#iefix') format('embedded-opentype'),
+         url('../recursos/tipografias/abeezee/abeezee.woff') format('woff'),
+         url('../recursos/tipografias/abeezee/abeezee.ttf') format('truetype'),
+         url('../recursos/tipografias/abeezee/abeezee.svg#alteraregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url('../recursos/tipografias/bebas/bebas.eot');
+    src: url('../recursos/tipografias/bebas/bebas.eot?#iefix') format('embedded-opentype'),
+         url('../recursos/tipografias/bebas/bebas.woff') format('woff'),
+         url('../recursos/tipografias/bebas/bebas.ttf') format('truetype'),
+         url('../recursos/tipografias/bebas/bebas.svg#alteraregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'helsinki';
+    src: url('../recursos/tipografias/helsinki/helsinki.eot');
+    src: url('../recursos/tipografias/helsinki/helsinki.eot?#iefix') format('embedded-opentype'),
+         url('../recursos/tipografias/helsinki/helsinki.woff') format('woff'),
+         url('../recursos/tipografias/helsinki/helsinki.ttf') format('truetype'),
+         url('../recursos/tipografias/helsinki/helsinki.svg#alteraregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.info{
+    text-decoration:none;
+    font-size:20px;
+    font-family:abeezee;
+    color:#555555;
+}

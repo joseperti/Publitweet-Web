@@ -1,0 +1,52 @@
+/* hoja de estilos para registro*/
+
+#ventana{
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    width:50%; 
+    height:40%; 
+    margin-top:10%; 
+    background:#FFFFFF; 
+    border-radius:10; 
+    opacity:0; 
+}
+
+#ventanaregistro{
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    width:20%; 
+    height:30%; 
+    margin-top:5%;
+    background:#FFFFFF; 
+    border-radius:10;  
+    opacity:0;
+
+}
+
+.input{
+    float:left; 
+    width:15%; 
+    height:5%; 
+    margin-left: -100; 
+    border-radius: 7; 
+    border-color: #00416E; 
+    outline:none; 
+    opacity: 0.5; 
+    font-size:15; 
+    padding-left:20
+    
+}
+
+#ventanacategoria{
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    width:50%; 
+    height:40%; 
+    margin-top:10%; 
+    background:#FFFFFF; 
+    border-radius:10; 
+    opacity:0; 
+}

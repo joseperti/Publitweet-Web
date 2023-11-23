@@ -1,0 +1,65 @@
+<!-- Unituit.com
+    Creado por José Pertierra das Neves
+    y Daniel Ávila Fernández-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unituit</title>
+        <link rel="stylesheet" href="../css/contacto.css" media="all" type="text/css">
+        <link rel="stylesheet" href="../css/tipografia.css" media="all" type="text/css">
+        <script  type="text/javascript" src="../script/main.js"></script>
+        <script src="script/captcha.js"></script>
+        <script src="../script/jquery.js"></script>
+        <meta charset="utf8">
+    </head>
+
+    <body onload="obtener_captcha()">
+        
+        <div id="cabecera"> <!-- Barra de menu -->     
+            <div id="cabeceramovil">
+                <div id="datoscabecera">
+                    <div id="divlogo">
+                        <img class="logo" src="../recursos/logos/logoazul.png" onclick="main()">
+                    </div>
+                    <div id="divsocial">
+                        <img class="social" src="../recursos/social/facebookicon.png" onclick="irafacebook()">
+                        <img class="social" src="../recursos/social/twittericon.png" onclick="iratwitter()">
+                        <img class="social" src="../recursos/social/mailicon.png" onclick="location.href = '../contacto/'">
+                    </div>     
+                    <div class="info"> 
+                    <a href="../index/"> Pagina Principal </a> - <a href="../contacto/"> Contacto </a> - <a href="../faqs/" > FAQs </a> <!--- <a href="../trabaja_con_nosotros/"> Trabaja con nosotros </a>-->
+                     - <a href="../politicas/"> Políticas de privacidad </a>
+                    </div>
+                </div> 
+            </div>
+        </div> <!-- Fin de la barra-->
+        
+        <div id="contenido">
+            <div id="divisor"></div>
+            ¿En qué podemos ayudarte?
+            <div id="divisor"></div>
+            <div id="contacto"><br>
+                Escribe tu mail 
+                <input class="texto" type="text" placeholder="usuario@host.com" id="email"><br><br>
+                DEPARTAMENTO
+                <select class="select" id="destino">
+                    <option value="informacion">Información</option>
+                    <option value="legal">Asesoría legal</option>
+                    <option value="desarrollo">Desarrollo</option>
+                </select><br><br>
+                Mensaje
+                <textarea id="mensaje" class="text" ></textarea><br><br>
+                <div id="captcha"></div>
+                <br>
+                Inserte el código <input type="text" id="valorcaptcha"></input>
+                <br><br>
+                <button class="boton" onclick="contacto()">ENVIAR</button>
+                
+            </div>
+        </div>
+        <div id="footer">
+        
+        </div>
+    </body>
+</html>

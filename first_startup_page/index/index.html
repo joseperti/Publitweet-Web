@@ -1,0 +1,158 @@
+<!--
+    Unituit.com
+    Creado por José Pertierra das Neves
+    y Daniel Ávila Fernández
+-->
+
+<!DOCTYPE html> 
+
+<!-- Inicio pagina -->
+<html>
+    <!-- cabecera de la pagina -->
+    <head>        
+        <link rel="stylesheet" href="../css/tipografia.css" media="all" type="text/css"> <!-- Hoja de estilos de la tipografia -->
+        <link rel="stylesheet" href="../css/main.css" media="all" type="text/css"> <!-- Hoja de estilos de la pagina principal -->
+        <script src="../script/jquery.js"></script> <!-- jquery -->
+        <script src="../script/efectos.js"></script> <!-- js de los efectos de la pagina principal -->
+        <script src="../script/emergente.js"></script> <!-- js de los efectos de la ventana emergente -->
+        <script src="../script/main.js"></script> <!-- js de la pagina princial -->
+        
+        <meta charset="utf-8">
+        <title>Unituit</title>
+
+    </head>
+    <!-- Fin de la cabecera -->
+    
+    <!-- Cuerpo de la pagina -->
+    <body onload="cargarefectos()"  link="#B0C4DE" vlink="#B0C4DE" alink="#B0C4DE">
+        
+        <div id="emergente"><!-- Ventana emergente --> 
+            
+        </div><!-- Fin de ventana emergente --> 
+        
+        <div id="ventanadatos">
+            <div id="ventanaemergente">
+                <div id="cargando">
+                    <div class="separador"></div>
+                    <label class="subti">Cargando</label>
+                    <div class="separador"></div>
+                    <img class="loading" src="../recursos/loading/loading.gif">
+                </div>
+                
+                <div id="ventanauser">
+                    <div class="separador"></div>
+                    <label class="subti">Usuario </label><br>
+                    <label id="nombretwitter" class="labelcalc">@user</label><br><br>
+                    <label class="subti">Ganancias </label><br>
+                    <label id="gananciastwitter" class="labelcalc">din</label>
+                </div>
+                
+                <div id="botones">
+                    <button class="botonemergente" onclick="atras()">ATRÁS</button>
+                    <button class="botonemergente" onclick="$(location).prop('href','../faqs/')">MAS INFORMACIÓN</button>
+                    <button class="botonemergente" onclick="logint()">COMENCEMOS</button>
+                </div>
+            </div>    
+        </div>
+        
+        <div id="cabecera"> <!-- Barra de menu -->     
+            <div id="cabeceramovil">
+                <div id="datoscabecera">
+                    <div id="divlogo">
+                        <img class="logo" src="../recursos/logos/logoazul.png" onclick="main()">
+                    </div>
+                    <div id="divsocial">
+                        <img class="social" src="../recursos/social/facebookicon.png" onclick="irafacebook()">
+                        <img class="social" src="../recursos/social/twittericon.png" onclick="iratwitter()">
+                        <img class="social" src="../recursos/social/mailicon.png" onclick="location.href = '../contacto/'">
+                    </div>     
+                    <div class="info"> 
+                    <a href="#funcionamiento"> ¿Como ganar dinero? </a> - <a href="../contacto/"> Contacto </a> - <a href="../faqs/" > FAQs </a> <!--- <a href="../trabaja_con_nosotros/"> Trabaja con nosotros </a>-->
+                     - <a href="../politicas/"> Políticas de privacidad </a>
+                    </div>
+                </div> 
+            </div>
+        </div> <!-- Fin de la barra-->
+                
+                <div id="contenido"><!-- Principio contenido -->
+                <div id="divcalcular"> <!-- div calcular ganancias twitter-->
+                    <div class="separador"></div>
+                    <div class="separador"></div>
+                    <img src="../recursos/imagenes/frase.png">
+                    <div class="separador"></div>
+                    <div id="elementoscal">               
+                        <div id="textplace">
+                            <input type="text" id="campocalcular" class="textfield" placeholder="@Unituit">
+                        </div>
+                        <div id="buttonplace">
+                            <button class="calcular" onclick="ventanaemergente()">CALCULAR</button>
+                        </div>
+                    </div>
+                    <div class="separador"></div>
+                </div> <!-- fin div calcular ganancias twitter-->            
+        </div><!-- Final contenido -->
+        
+        <div id="infodiv">
+            <div id="informacion"> <!-- Principio div informacion -->
+                <div id="anunciantes">
+                    <div class="separador"></div>
+                    <label class="subti">ANUNCIANTES</label><br>
+                    <label class="parrafo">TU PUBLICIDAD DONDE QUIERAS</label>
+                    <div class="separador"></div>
+                    <button class="botonenlace" onclick="login()">Inicia sesión</button><br><br>
+                    <button class="botonenlace" onclick="$(location).prop('href','../empresa/nuevo_empresa')" >Regístrate</button>
+                    
+                    <div id="infoanunciantes">
+                        <div class="separador"></div>
+                        <label class="info">¿Quiere dar a conocer sus productos o servicios pero los métodos habituales le suponen mucho dinero?<b> Unituit le da la posibilidad de anunciarse de un modo económico, directo y eficaz.</b> Por el precio mínimo de <b>12,5 </b>euros le haremos llegar su anuncio a <b>10.000 personas interesadas en sus anuncios.</b> No te lo pienses y forma parte de lo que llamamos <b>publicidad dirigida, </b>la publicidad del futuro inmediato.</label>
+                    </div>
+                    
+                    <img class="cartel" src="../recursos/imagenes/cartel.png">
+                </div>
+
+                <div id="twitteros">
+                    <div class="separador"></div>
+                    <label class="subti">TUITEROS</label><br>
+                    <label class="parrafo">TUITEA Y GANA</label>
+                    <div class="separador"></div>
+                    <button class="botonenlace" onclick="logint()">Inicia sesión</button><br><br>
+                    <button class="botonenlace" onclick="$(location).prop('href','../faqs/')">Más información</button>
+                    
+                    <div id="infotwitteros">
+                        <div class="separador"></div>
+                        <label class="info">¿Ganar dinero utilizando Twitter? <b>¡Con Unituit sí!</b> Solo tendrás que publicar tweets de nuestros anunciantes y podrás llevarte un dinero extra.<b> Tú decides</b> que anuncios pueden interesar a tus Followers y con un único click estarás ganando dinero. <b>¡Inicia sesión ya!</b></label>
+                    </div>
+                </div>
+                
+                <label class="subti3">COMO GANAR DINERO CON UNITUIT</label>
+            </div> 
+        </div><!--Final div informacion -->
+        
+        <div id="funcionamiento">
+            <div id="contenidofun">
+                <div class="separador"></div>
+                    1. &nbsp Registrate &nbsp en &nbsp Unituit.com
+                    <div class="separador"></div>
+                    2. &nbsp Selecciona &nbsp las &nbsp categorias &nbsp que &nbsp van &nbsp contigo
+                    <div class="separador"></div>
+                    3. &nbsp Tuitea &nbsp los &nbsp mensajes &nbsp que &nbsp lleguen &nbsp a &nbsp tu &nbsp panel
+                    <div class="separador"></div>
+                    4. &nbsp Recibe &nbsp tu &nbsp dinero                     
+            </div>
+        </div>
+        <!-- Script de google analuytics -->
+       <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-48292918-1', 'unituit.com');
+          ga('send', 'pageview');
+        </script>
+        <!-- Fion de analytics -->
+    </body>
+    <!-- Fin del cuerpo-->
+    
+</html>
+<!-- Fin de la pagina -->

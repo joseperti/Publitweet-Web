@@ -1,0 +1,8 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^unituit\.es$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.unituit\.es$
+RewriteRule ^/?$ "http\:\/\/www\.unituit\.com\/" [R=301,L]
+
+AuthName "loqueseve"
+AuthUserFile "/home2/unituitc/.htpasswds/public_html/passwd"
